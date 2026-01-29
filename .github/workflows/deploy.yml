@@ -15,5 +15,5 @@ jobs:
                     mkdir -p ~/.ssh
                     echo "$SSH_KEY" > ~/.ssh/deploy_key
                     chmod 600 ~/.ssh/deploy_key
-                    ssh-keyscan -H your-vm-ip >> ~/.ssh/known_hosts
-                    scp -i ~/.ssh/deploy_key -r ./index.html user@your-vm-ip:/var/www/html/
+                    ssh-keyscan -H 195.148.20.149 >> ~/.ssh/known_hosts
+                    scp -i ~/.ssh/deploy_key -r ./index.html ubuntu@195.148.20.149:/var/www/html/
